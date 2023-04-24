@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+margin: 0 auto;
+width: 100%;
+
+header {
+    background-color: black;
+    display: flex;
+    height: 50px;
+        .orange {
+            background-color: orangered;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            img {
+                width: 10%;
+            }
+            span {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+        .black {
+            display: flex;
+                align-items: center;
+            ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 0 30px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .home {
+            background-image: url(../slike/intro.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                width: 50%;
+                margin-top: 200px;
+                color: white;
+                background-color: rgba(128, 128, 128, 0.386);
+                
+            }
+        }
+        .buttons {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            button{
+                padding: 10px;
+                margin: 0 30px;
+                background-color: white;
+                border-radius: 20px;
+                border: 1px solid rgb(207, 207, 207);
+            }
+        }
+        .images {
+            background-color: rgb(219, 219, 219);
+            
+div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   width: 80%;
+
+            .img1{
+                background-image: url(../slike/1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+                
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            .img2{
+                background-image: url(../slike/2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            .img3{
+                background-image: url(../slike/3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            .img4{
+                background-image: url(../slike/4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            .img5{
+                background-image: url(../slike/5.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            .img6{
+                background-image: url(../slike/6.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 180px;
+                height: 300px;
+                margin: 20px;
+                div{
+                    background-color: rgba(255, 255, 255, 0.429);
+                    height: 100px;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+}
