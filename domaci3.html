@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-		<div class="orange">
+		<div class="left">
 			<img src="slike/location.png">
 			<span>New York</span>
 		</div>
-		<nav class="black">
+		<nav class="right">
 		    <ul>
 		        <li><a href="#">Rent</a></li>
 		     	<li><a href="#">Buy</a></li>
@@ -25,7 +25,7 @@
 
     <main>
         <section class="home">
-            <div>
+            <div class="hp">
                 <h1>Welcome to HomeExchange</h1>
                 <p>Your fastest way to find or sell home online.</p>
             </div>  
@@ -38,40 +38,97 @@
         </section>
 
         <section class="images">
-            <div>
-           <div class="img1">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>
-            </div>
-        </div>
+            <div class="img">
+                <div class="img1">
+                    <div class="room">
+                        <p>Studio<br> $1,138</p>
+                    </div>
+                </div>
            <div class="img2">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>
-            </div>
+                <div class="room">
+                    <p>1 bedroom<br> $1,422</p>
+                </div>
            </div>
            <div class="img3">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>>
-            </div>
+                <div class="room">
+                    <p>2 bedroom<br> $1,655</p>>
+                </div>
            </div>
            <div class="img4">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>
-            </div>
+                <div class="room">
+                    <p>3 bedroom<br> $1,990</p>
+                </div>
            </div>
            <div class="img5">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>
-            </div>
+                <div class="room">
+                    <p>4 bedroom<br> $2,738</p>
+                </div>
            </div>
            <div class="img6">
-            <div>
-                <p>Loft Apartment <br> $3,000</p>
-        
-            </div>
+                <div class="room">
+                    <p>President Apartment <br> $5,000</p>
+                </div>
            </div>
         </div>
         </section>
+
+        <section class="pricing">
+            <h2>PRICING</h2>
+            <p>Our services prices in New York</p>
+            <button type="submit">Check the prices</button>
+            <table>
+                <tr>
+                    <th colspan="2"></th>
+                    <td colspan="2" class="orange">Price</td>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                    <td class="black">Rent/Buy</th>
+                    <td class="black">Sell</th>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="orange">Location</td>
+                    <td class="black">Downtoun</td>
+                    <td>3$</td>
+                    <td>3$</td>
+                </tr>
+                <tr>
+                    
+                    <td class="black">Center</td>
+                    <td>3$</td>
+                    <td>$3$</td>
+                </tr>
+                <tr>
+                    <td class="black">Manhattan</td>
+                    <td>3$</td>
+                    <td>3$</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contactUs">
+            <h2>Contact Us</h2>
+            <div class="mapAndForm">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937996263!2d-73.98732504874033!3d40.758894979225374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1sen!2srs!4v1459337666748" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <form action="#" method="get">
+                    <div class="selectInput">
+                        <select>
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                        </select>
+                        <input type="text" class="contact" placeholder="Your name"></input>
+                    </div>
+                    <input type="email" class="contact" placeholder="Your email"></input>
+                    <textarea class="contact" placeholder="Your message"></textarea>
+                </form>
+            </div>
+        </section>
+        
     </main>
+    <footer>
+        Copyright &copy; 2016 <span>HomeExchange</span>
+    </footer>
 </body>
 </html>

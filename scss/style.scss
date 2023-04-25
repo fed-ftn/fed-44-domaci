@@ -1,7 +1,12 @@
+@import 'mixins';
+@import 'var';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font;
+    color: $color2;
 }
 
 body {
@@ -9,11 +14,11 @@ margin: 0 auto;
 width: 100%;
 
 header {
-    background-color: black;
+    background-color: $color3;
     display: flex;
     height: 50px;
-        .orange {
-            background-color: orangered;
+        .left {
+            background-color: $color1;
             display: flex;
             align-items: center;
             padding: 10px;
@@ -21,11 +26,11 @@ header {
                 width: 10%;
             }
             span {
-                color: white;
+                color: $color5;
                 text-decoration: underline;
             }
         }
-        .black {
+        .right {
             display: flex;
                 align-items: center;
             ul {
@@ -34,33 +39,43 @@ header {
                     list-style: none;
                     margin: 0 30px;
                     a{
-                        color: white;
+                        color: $color5;
                         text-decoration: none;
+                    }
+                    a:hover{
+                        text-decoration: underline;
                     }
                 }
             }
         }
     }
+
     main {
+
         .home {
             background-image: url(../slike/intro.jpg);
-            height: 100vh;
+            height: 600px;
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
             justify-content:center;
             align-items: center;
     
-            div {
+            .hp {
                 display: flex;
                 flex-direction: column;
                 justify-content:center;
                 align-items: center;
                 width: 50%;
                 margin-top: 200px;
-                color: white;
-                background-color: rgba(128, 128, 128, 0.386);
-                
+                color: $color5;
+                background-color: rgba(56, 56, 56, 0.386);
+                h1{
+                    color: $color4;
+                }
+                p {
+                    color: $color4;
+                }
             }
         }
         .buttons {
@@ -68,131 +83,358 @@ header {
             display: flex;
             align-items: center;
             justify-content: end;
+
             button{
                 padding: 10px;
                 margin: 0 30px;
-                background-color: white;
+                background-color: $color5;
                 border-radius: 20px;
                 border: 1px solid rgb(207, 207, 207);
             }
+
+            button:hover{
+                background-color: $color4;
+                color: $color5;
+            }
         }
+        
         .images {
-            background-color: rgb(219, 219, 219);
+            background-color: $color5;
             
-div {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-   width: 80%;
+            .img {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                width: 80%;
 
-            .img1{
-                background-image: url(../slike/1.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
+                .img1{
+                    background-image: url(../slike/1.jpg);
+                    @include forImages;
+                }
+                .img1:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+                .img2{
+                    background-image: url(../slike/2.jpg);
+                    @include forImages;
+                }
+                .img2:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+                .img3{
+                    background-image: url(../slike/3.jpg);
+                    @include forImages;
+                }
+                .img3:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+                .img4{
+                    background-image: url(../slike/4.jpg);
+                    @include forImages;
+                }
+                .img4:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+                .img5{
+                    background-image: url(../slike/5.jpg);
+                    @include forImages;
+                }
+                .img5:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+                .img6{
+                    background-image: url(../slike/6.jpg);
+                    @include forImages;
+                }
+                .img6:hover{
+                    .room{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .pricing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            margin: 40px auto;
+            text-align: center;
+            h2{
+                margin: 10px 0;
+            }
+            p{
+                margin: 30px 0;
+            }
+            button{
+                display: none;
+                padding: 10px;
+                margin: 0 30px;
+                background-color: $color5;
+                border-radius: 20px;
+                border: 1px solid rgb(207, 207, 207);
+            }
+            table {
+                border-collapse: collapse;
+                tr {
+                    .orange {
+                        background-color: $color1;
+                        border: 1px solid $color3;
+                        color: $color5;
+                    }
+                    .black {
+                        background-color: $color3;
+                        color: $color5;
+                        border: 1px solid $color2;
+                    }
+                    td {
+                        border: 1px solid $color3;
+                    }
+                }
+            }
+        }
+        .contactUs {
+            background-color: $color5;
+            text-align: center;
+            h2{
+                padding: 30px;
+            }
+                .mapAndForm{
+                    margin: 0 auto;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
                 
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
-                        
-                    }
+                .map{
+                    margin: 20px;
                 }
-            }
-            .img2{
-                background-image: url(../slike/2.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
+                form{
+                    margin: 20px;
+                    display: block;
+                    flex-direction: column;
+                    background-color: $color1;
+                    width: 500px;
+                    height: 280px;
+                    padding: 20px;
 
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
+                    .selectInput{
+                        select{
+                           width: 20%;
+                           float: left;
+                           padding: 10px;  
+                        }
+                        input[type="text"] {
+                            width: 70%;
+                           float: right;
+                           padding: 10px;  
                         
+                        }
                     }
                 }
+                input[type="email"] {
+                    width: 100%;
+                    margin: 10px 0; 
+                    padding: 10px;   
+                }
+                textarea{
+                    width: 100%;
+                    margin: 10px 0; 
+                    height: 100px;
+                }
             }
-            .img3{
-                background-image: url(../slike/3.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
+        }
+    }
+    footer{
+        background-color: $color3;
+        color: $color5;
+        text-align: center;
+        span{
+            color: $color1;
+        }
+    }
+}
 
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
-                        
+@media screen and (max-width: 1024px) {
+    body{
+        main {
+            .home {
+                .hp {
+                    h1{
+                        font-size: 3em;
+                        text-align: center;
+                    }
+                    p {
+                        color: $color4;
                     }
                 }
             }
-            .img4{
-                background-image: url(../slike/4.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
+            .buttons {
+                margin-right: 100px;
+            }
+            .images {
+                .img {
+                    justify-content: center;
+                    align-items: center;
+                    .img1{
+                        width: 40%;
+                    }
+                    .img2{
+                        width: 40%;
+                    }
+                    .img3{
+                        width: 40%;
+                    }
+                    .img4{
+                        width: 40%;
+                    }
+                    .img5{
+                        width: 40%;
+                    }
+                    .img6{
+                        width: 40%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
-                        
+@media screen and (max-width: 768px) {
+    body{
+        header {
+            background-color: $color3;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 50px;
+            .right {
+                justify-content: center;
+                background-color:$color3 ;
+                ul {
+                    flex-direction: column;
+                    li {
+                        padding: 20px;
                     }
                 }
             }
-            .img5{
-                background-image: url(../slike/5.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
-
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
-                        
+        }
+        main {
+            .home {
+                display: flex;
+                background-image: none;
+                background-color: black;
+                height: 500px;
+                text-align: center;
+                .hp {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items: center;
+                    color: $color5;
+                    
+                    h1{
+                        text-align: center;
+                    }
+                    p {
+                        color: $color4;
                     }
                 }
             }
-            .img6{
-                background-image: url(../slike/6.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 180px;
-                height: 300px;
-                margin: 20px;
-                div{
-                    background-color: rgba(255, 255, 255, 0.429);
-                    height: 100px;
-                    width: 100%;
-                    p{
-                        font-size: 20px;
-                        
+            .images {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   
+                    .img1{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                    .img2{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                    .img3{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                    .img4{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                    .img5{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                    .img6{
+                        width: 100%;
+                        .room{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .pricing {
+                
+                button{
+                    display: block;
+                   
+                }
+                table {
+                    display: none;
+                }
+            }
+            .contactUs {
+                .mapAndForm{
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        .selectInput{
+                            display: flex;
+                            flex-direction: column;
+                            select{
+                                width: 100%;
+                                float: none; 
+                            }
+                            input[type="text"] {
+                                width: 100%;
+                                margin-top: 10px;
+                                float: none;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}
+    footer {
+        padding: 20px;
+    }
 }

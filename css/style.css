@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #797979;
 }
 
 body {
@@ -9,56 +12,65 @@ body {
   width: 100%;
 }
 body header {
-  background-color: black;
+  background-color: #374249;
   display: flex;
   height: 50px;
 }
-body header .orange {
-  background-color: orangered;
+body header .left {
+  background-color: #f75311;
   display: flex;
   align-items: center;
   padding: 10px;
 }
-body header .orange img {
+body header .left img {
   width: 10%;
 }
-body header .orange span {
-  color: white;
+body header .left span {
+  color: #f3f7f9;
   text-decoration: underline;
 }
-body header .black {
+body header .right {
   display: flex;
   align-items: center;
 }
-body header .black ul {
+body header .right ul {
   display: flex;
 }
-body header .black ul li {
+body header .right ul li {
   list-style: none;
   margin: 0 30px;
 }
-body header .black ul li a {
-  color: white;
+body header .right ul li a {
+  color: #f3f7f9;
   text-decoration: none;
+}
+body header .right ul li a:hover {
+  text-decoration: underline;
 }
 body main .home {
   background-image: url(../slike/intro.jpg);
-  height: 100vh;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main .home div {
+body main .home .hp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   margin-top: 200px;
-  color: white;
-  background-color: rgba(128, 128, 128, 0.386);
+  color: #f3f7f9;
+  background-color: rgba(56, 56, 56, 0.386);
+}
+body main .home .hp h1 {
+  color: #cfd1d3;
+}
+body main .home .hp p {
+  color: #cfd1d3;
 }
 body main .buttons {
   height: 100px;
@@ -69,20 +81,24 @@ body main .buttons {
 body main .buttons button {
   padding: 10px;
   margin: 0 30px;
-  background-color: white;
+  background-color: #f3f7f9;
   border-radius: 20px;
   border: 1px solid rgb(207, 207, 207);
 }
-body main .images {
-  background-color: rgb(219, 219, 219);
+body main .buttons button:hover {
+  background-color: #cfd1d3;
+  color: #f3f7f9;
 }
-body main .images div {
+body main .images {
+  background-color: #f3f7f9;
+}
+body main .images .img {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 80%;
 }
-body main .images div .img1 {
+body main .images .img .img1 {
   background-image: url(../slike/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,15 +106,20 @@ body main .images div .img1 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img1 div {
+body main .images .img .img1 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img1 div p {
+body main .images .img .img1 .room p {
   font-size: 20px;
 }
-body main .images div .img2 {
+body main .images .img .img1:hover .room {
+  display: block;
+}
+body main .images .img .img2 {
   background-image: url(../slike/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,15 +127,20 @@ body main .images div .img2 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img2 div {
+body main .images .img .img2 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img2 div p {
+body main .images .img .img2 .room p {
   font-size: 20px;
 }
-body main .images div .img3 {
+body main .images .img .img2:hover .room {
+  display: block;
+}
+body main .images .img .img3 {
   background-image: url(../slike/3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,15 +148,20 @@ body main .images div .img3 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img3 div {
+body main .images .img .img3 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img3 div p {
+body main .images .img .img3 .room p {
   font-size: 20px;
 }
-body main .images div .img4 {
+body main .images .img .img3:hover .room {
+  display: block;
+}
+body main .images .img .img4 {
   background-image: url(../slike/4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,15 +169,20 @@ body main .images div .img4 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img4 div {
+body main .images .img .img4 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img4 div p {
+body main .images .img .img4 .room p {
   font-size: 20px;
 }
-body main .images div .img5 {
+body main .images .img .img4:hover .room {
+  display: block;
+}
+body main .images .img .img5 {
   background-image: url(../slike/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,15 +190,20 @@ body main .images div .img5 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img5 div {
+body main .images .img .img5 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img5 div p {
+body main .images .img .img5 .room p {
   font-size: 20px;
 }
-body main .images div .img6 {
+body main .images .img .img5:hover .room {
+  display: block;
+}
+body main .images .img .img6 {
   background-image: url(../slike/6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,13 +211,257 @@ body main .images div .img6 {
   height: 300px;
   margin: 20px;
 }
-body main .images div .img6 div {
+body main .images .img .img6 .room {
+  padding: 10px;
+  display: none;
   background-color: rgba(255, 255, 255, 0.429);
   height: 100px;
   width: 100%;
 }
-body main .images div .img6 div p {
+body main .images .img .img6 .room p {
   font-size: 20px;
+}
+body main .images .img .img6:hover .room {
+  display: block;
+}
+body main .pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+body main .pricing h2 {
+  margin: 10px 0;
+}
+body main .pricing p {
+  margin: 30px 0;
+}
+body main .pricing button {
+  display: none;
+  padding: 10px;
+  margin: 0 30px;
+  background-color: #f3f7f9;
+  border-radius: 20px;
+  border: 1px solid rgb(207, 207, 207);
+}
+body main .pricing table {
+  border-collapse: collapse;
+}
+body main .pricing table tr .orange {
+  background-color: #f75311;
+  border: 1px solid #374249;
+  color: #f3f7f9;
+}
+body main .pricing table tr .black {
+  background-color: #374249;
+  color: #f3f7f9;
+  border: 1px solid #797979;
+}
+body main .pricing table tr td {
+  border: 1px solid #374249;
+}
+body main .contactUs {
+  background-color: #f3f7f9;
+  text-align: center;
+}
+body main .contactUs h2 {
+  padding: 30px;
+}
+body main .contactUs .mapAndForm {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main .contactUs .mapAndForm .map {
+  margin: 20px;
+}
+body main .contactUs .mapAndForm form {
+  margin: 20px;
+  display: block;
+  flex-direction: column;
+  background-color: #f75311;
+  width: 500px;
+  height: 280px;
+  padding: 20px;
+}
+body main .contactUs .mapAndForm form .selectInput select {
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+body main .contactUs .mapAndForm form .selectInput input[type=text] {
+  width: 70%;
+  float: right;
+  padding: 10px;
+}
+body main .contactUs .mapAndForm input[type=email] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+body main .contactUs .mapAndForm textarea {
+  width: 100%;
+  margin: 10px 0;
+  height: 100px;
+}
+body footer {
+  background-color: #374249;
+  color: #f3f7f9;
+  text-align: center;
+}
+body footer span {
+  color: #f75311;
+}
+
+@media screen and (max-width: 1024px) {
+  body main .home .hp h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  body main .home .hp p {
+    color: #cfd1d3;
+  }
+  body main .buttons {
+    margin-right: 100px;
+  }
+  body main .images .img {
+    justify-content: center;
+    align-items: center;
+  }
+  body main .images .img .img1 {
+    width: 40%;
+  }
+  body main .images .img .img2 {
+    width: 40%;
+  }
+  body main .images .img .img3 {
+    width: 40%;
+  }
+  body main .images .img .img4 {
+    width: 40%;
+  }
+  body main .images .img .img5 {
+    width: 40%;
+  }
+  body main .images .img .img6 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header {
+    background-color: #374249;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+  }
+  body header .right {
+    justify-content: center;
+    background-color: #374249;
+  }
+  body header .right ul {
+    flex-direction: column;
+  }
+  body header .right ul li {
+    padding: 20px;
+  }
+  body main .home {
+    display: flex;
+    background-image: none;
+    background-color: black;
+    height: 500px;
+    text-align: center;
+  }
+  body main .home .hp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f3f7f9;
+  }
+  body main .home .hp h1 {
+    text-align: center;
+  }
+  body main .home .hp p {
+    color: #cfd1d3;
+  }
+  body main .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .images .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .images .img .img1 {
+    width: 100%;
+  }
+  body main .images .img .img1 .room {
+    display: block;
+  }
+  body main .images .img .img2 {
+    width: 100%;
+  }
+  body main .images .img .img2 .room {
+    display: block;
+  }
+  body main .images .img .img3 {
+    width: 100%;
+  }
+  body main .images .img .img3 .room {
+    display: block;
+  }
+  body main .images .img .img4 {
+    width: 100%;
+  }
+  body main .images .img .img4 .room {
+    display: block;
+  }
+  body main .images .img .img5 {
+    width: 100%;
+  }
+  body main .images .img .img5 .room {
+    display: block;
+  }
+  body main .images .img .img6 {
+    width: 100%;
+  }
+  body main .images .img .img6 .room {
+    display: block;
+  }
+  body main .pricing button {
+    display: block;
+  }
+  body main .pricing table {
+    display: none;
+  }
+  body main .contactUs .mapAndForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .contactUs .mapAndForm form .selectInput {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .contactUs .mapAndForm form .selectInput select {
+    width: 100%;
+    float: none;
+  }
+  body main .contactUs .mapAndForm form .selectInput input[type=text] {
+    width: 100%;
+    margin-top: 10px;
+    float: none;
+  }
+  footer {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
